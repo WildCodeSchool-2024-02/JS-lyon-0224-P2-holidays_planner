@@ -1,12 +1,13 @@
 import React from "react";
 
-function US_FC_button() {
-  return (
-    <div>
-      <label className="country"></label>
-      <button>Search</button>
-    </div>
-  );
-}
-
-export default US_FC_button;
+function USFCButton() {
+    return (
+        <div>
+            <input type="text" className="enter_country"></input>
+            <button>Search</button>
+        </div>
+      
+    );
+  }
+  
+  export default USFCButton;
