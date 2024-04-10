@@ -1,4 +1,7 @@
 .burgerMenu {
-    list-style: none;
-    border: black solid;
+  list-style: none;
+  border: black solid;
+  display: flex;
+  justify-content: flex-end;
+  font-size: calc(0.5rem + 1.5vw);
 }

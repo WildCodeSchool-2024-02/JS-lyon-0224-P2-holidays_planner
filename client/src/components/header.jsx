@@ -1,7 +1,8 @@
-import '../header.css'
+import "../header.css";
 
 function Header() {
-    return <nav className="navigation">
+  return (
+    <nav className="navigation">
       <ul className="burgerMenu">
         <li>Homepage</li>
         <li>Filter country</li>
@@ -9,7 +10,8 @@ function Header() {
         <li>Calendar</li>
         <li>About us</li>
       </ul>
-    </nav>;
-  }
-  
-  export default Header;
+    </nav>
+  );
+}
+
+export default Header;
