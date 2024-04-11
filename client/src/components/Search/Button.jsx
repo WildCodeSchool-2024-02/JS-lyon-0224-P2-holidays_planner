@@ -1,4 +1,4 @@
-function USFCButton() {
+function Button() {
   return (
     <div>
       <input type="text" className="enter_country" />
@@ -7,4 +7,4 @@ function USFCButton() {
   );
 }
 
-export default USFCButton;
+export default Button;

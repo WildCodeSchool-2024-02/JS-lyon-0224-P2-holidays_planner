@@ -1,4 +1,4 @@
-function USFCResult() {
+function Result() {
   return (
     <div>
       <section className="ResultPage">
@@ -9,4 +9,4 @@ function USFCResult() {
   );
 }
 
-export default USFCResult;
+export default Result;

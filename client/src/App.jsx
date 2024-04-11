@@ -1,8 +1,8 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import USFCResult from "./components/US_FC_Result";
-import USFCbutton from "./components/US_FC_button";
-import Header from "./components/header";
+import Result from "./components/Result/Result";
+import Button from "./components/Search/Button";
+import Header from "./components/Header/Header";
 
 function App() {
   const [data, setData] = useState([]);
@@ -10,16 +10,15 @@ function App() {
   useEffect(() => {
     fetch("https://date.nager.at/api/v3/NextPublicHolidays/FR")
       .then((res) => res.json())
-      .then((json) => setData(json))
-      .catch(() => alert("error"));
+      .then((json) => setData(json));
   }, []);
 
   return (
     <div>
       <main>
         <Header />
-        <USFCbutton />
-        <USFCResult />
+        <Button />
+        <Result />
         <div>
           {data.map((holiday) => (
             <div key={holiday.date}>
