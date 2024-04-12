@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from "./result.module.css";
 
 function Result({ holidays }) {
@@ -13,5 +14,15 @@ function Result({ holidays }) {
     </section>
   );
 }
+
+Result.propTypes = {
+  holidays: PropTypes.arrayOf(
+    PropTypes.shape({
+      date: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      localName: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export default Result;
