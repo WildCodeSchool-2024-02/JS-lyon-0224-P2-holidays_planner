@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+.blocSearch {
+    padding: 2vh 3vh 2vh 3vh;
+    width: 90%;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    text-align: center;
+}
+
+.country {
+    width: 70%;
+    height: 4vh;
+    font-size: 20px;
+}
+
+.search {
+    width: 20%;
+    height: 4vh;
+    font-size: 15px;
+    margin:1vh;
+}
