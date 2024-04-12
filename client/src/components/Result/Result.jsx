@@ -1,12 +1,18 @@
-function Result() {
+import styles from "./result.module.css";
+
+function Result({ holidays }) {
   return (
-    <div>
-      <section className="ResultPage">
-        <p className="TextResultPage">Date</p>
-        <p className="TextResultPage">Event Name</p>
-      </section>
-    </div>
+    <section className={styles.resultPage}>
+      <div>
+        {holidays.map((holiday) => (
+          <div key={holiday.date}>
+            {holiday.date} - {holiday.name} - {holiday.localName}
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 
 export default Result;
+
