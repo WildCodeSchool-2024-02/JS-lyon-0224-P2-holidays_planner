@@ -1,15 +1,34 @@
-import "./header.module.css"
+import styles from "./header.module.css";
+import Logo from "../../assets/images/logo.png";
 
 function Header() {
   return (
-    <nav className="navigation">
-      <ul className="burgerMenu">
-        <li>Homepage</li>
-        <li>Filter country</li>
-        <li>Filter country and period</li>
-        <li>Calendar</li>
-        <li>About us</li>
-      </ul>
+    <nav className={styles.navBar}>
+      <img src={Logo} alt="logo earth" className={styles.logoPlanet} />
+      <div className={styles.divClass}>
+        <ul className={styles.navBarLinks}>
+          <li className={styles.navBarItem}>
+            <a href="/" className={styles.navBarLink}>
+              Homepage
+            </a>
+          </li>
+          <li className={styles.navBarItem}>
+            <a href="/" className={styles.navBarLink}>
+              Filter country
+            </a>
+          </li>
+          <li className={styles.navBarItem}>
+            <a href="/" className={styles.navBarLink}>
+              Filter period
+            </a>
+          </li>
+          <li className={styles.navBarItem}>
+            <a href="/" className={styles.navBarLink}>
+              About us
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }
