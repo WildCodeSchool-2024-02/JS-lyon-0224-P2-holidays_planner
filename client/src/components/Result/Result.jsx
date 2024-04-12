@@ -15,4 +15,3 @@ function Result({ holidays }) {
 }
 
 export default Result;
-
