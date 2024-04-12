@@ -1,8 +1,9 @@
-import "./App.css";
 import { useState, useEffect } from "react";
-import Result from "./components/Result/Result";
-import Button from "./components/Search/Button";
+import styles from "./App.module.css";
 import Header from "./components/Header/Header";
+import Button from "./components/Search/Button";
+import Result from "./components/Result/Result";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [data, setData] = useState([]);
@@ -14,19 +15,19 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <main>
+    <div className={styles.divApp}>
+      <section className={styles.headerPart}>
         <Header />
+      </section>
+      <section className={styles.buttonPart}>
         <Button />
-        <Result />
-        <div>
-          {data.map((holiday) => (
-            <div key={holiday.date}>
-              {holiday.date} - {holiday.name} - {holiday.localName}
-            </div>
-          ))}
-        </div>
-      </main>
+      </section>
+      <section className={styles.resultPart}>
+        <Result holidays={data} />
+      </section>
+      <section className={styles.footerPart}>
+        <Footer />
+      </section>
     </div>
   );
 }
