@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar {
+  border: black solid;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.navBarLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.navBarLink {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  justify-content: flex-end;
+}
+
+.navBarItem {
+  list-style: none;
+}
+
+.logoPlanet {
+  width: 8rem;
+}
+
+.divClass {
+  display: flex;
+  flex-direction: column;
+}
