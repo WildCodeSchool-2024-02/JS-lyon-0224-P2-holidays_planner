@@ -1,5 +1,5 @@
 import styles from "./footer.module.css";
-import travel from "../../assets/images/travel.png";
+import travel from "../../../assets/images/travel.png";
 
 function Footer() {
   return (
