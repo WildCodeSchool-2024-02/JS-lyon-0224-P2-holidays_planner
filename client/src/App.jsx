@@ -1,35 +1,18 @@
-import { useState, useEffect } from "react";
-import styles from "./App.module.css";
-import Header from "./components/Header/Header";
-import Button from "./components/Search/Button";
-import Result from "./components/Result/Result";
-import Footer from "./components/Footer/Footer";
+import { Link, Outlet } from "react-router-dom";
 
 function App() {
-  const [data, setData] = useState(["FR"]);
-  const [countryCode, setCountryCode] = useState("");
-
-  useEffect(() => {
-    fetch(`https://date.nager.at/api/v3/NextPublicHolidays/${countryCode}`)
-      .then((res) => res.json())
-      .then((json) => setData(json));
-  }, [countryCode]);
-
   return (
-    <div className={styles.divApp}>
-      <section className={styles.headerPart}>
-        <Header />
-      </section>
-      <section className={styles.buttonPart}>
-        <Button setCountryCode={setCountryCode} />
-      </section>
-      <section className={styles.resultPart}>
-        <Result holidays={data} />
-      </section>
-      <section className={styles.footerPart}>
-        <Footer />
-      </section>
-    </div>
+    <>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/filtercountry">FilterCountry</Link>
+        <Link to="/calender">Calender</Link>
+        <Link to="/aboutus">AboutUs</Link>
+      </nav>
+      <main>
+        <Outlet />
+      </main>
+    </>
   );
 }
 

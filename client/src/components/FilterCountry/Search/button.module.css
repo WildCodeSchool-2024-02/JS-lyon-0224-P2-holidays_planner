@@ -1,5 +1,7 @@
+
 .blocSearch {
   padding: 2vh 3vh 2vh 3vh;
+  width: 90%;
   border-radius: 2vh;
   display: flex;
   justify-content: center;
@@ -9,7 +11,8 @@
 }
 
 .title {
-  font-family: "PaytoneOne-Regular";
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 45px;
   text-align: center;
@@ -26,14 +29,4 @@
   height: 4vh;
   font-size: 15px;
   margin: 1vh;
-}
-
-@media only screen and (max-width: 430px) {
-  .blocSearch {
-    margin: 0;
-  }
-
-  .title {
-    font-size: 35px;
-  }
 }
