@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Luckiest+Guy&display=swap");
 
+@font-face {
+  font-family: "PaytoneOne-Regular";
+  src: url(assets/Fonts/Paytone_One/PaytoneOne-Regular.ttf) format("truetype");
+}
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -28,9 +33,21 @@
   flex-wrap: wrap;
 }
 
+.resultPart {
+  font-size: 25px;
+}
+
 .headerPart,
 .buttonPart,
 .resultPart,
 .footerPart {
   margin: var(--margin-eachcontainer);
+}
+
+@media only screen and (max-width: 430px) {
+  .resultPart {
+    font-size: 18px;
+    width: 100%;
+    margin: auto;
+  }
 }

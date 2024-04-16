@@ -5,9 +5,15 @@ function Result({ holidays }) {
   return (
     <section className={styles.resultPage}>
       <div>
+        <section className={styles.titlesResults}>
+          <p className={styles.date}>Date</p>
+          <p className={styles.name}>Name</p>
+        </section>
         {holidays.map((holiday) => (
           <div key={holiday.date}>
-            {holiday.date} - {holiday.name} - {holiday.localName}
+            <span className={styles.resultsData}>
+              {holiday.date} {holiday.name}
+            </span>
           </div>
         ))}
       </div>

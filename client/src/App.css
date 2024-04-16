@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "PaytoneOne-Regular";
+  src: url(assets/Fonts/Paytone_One/PaytoneOne-Regular.ttf) format("truetype");
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;

@@ -6,13 +6,14 @@ import Result from "./components/Result/Result";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(["FR"]);
+  const [countryCode, setCountryCode] = useState("");
 
   useEffect(() => {
-    fetch("https://date.nager.at/api/v3/NextPublicHolidays/FR")
+    fetch(`https://date.nager.at/api/v3/NextPublicHolidays/${countryCode}`)
       .then((res) => res.json())
       .then((json) => setData(json));
-  }, []);
+  }, [countryCode]);
 
   return (
     <div className={styles.divApp}>
@@ -20,7 +21,7 @@ function App() {
         <Header />
       </section>
       <section className={styles.buttonPart}>
-        <Button />
+        <Button setCountryCode={setCountryCode} />
       </section>
       <section className={styles.resultPart}>
         <Result holidays={data} />
