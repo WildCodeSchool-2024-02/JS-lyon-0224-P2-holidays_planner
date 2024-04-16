@@ -1,12 +1,10 @@
-import styles from "./button.module.css";
-
 function Button() {
   return (
-    <div className={styles.blocSearch}>
-      <label className={styles.title}>
+    <div>
+      <label>
         Choose your country
-        <input type="text" className={styles.country} minLength="2" />
-        <button type="button" className={styles.search}>
+        <input type="text" minLength="2" />
+        <button type="button">
           Search
         </button>
       </label>
