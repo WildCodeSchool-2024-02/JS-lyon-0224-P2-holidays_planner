@@ -5,9 +5,13 @@ function Result({ holidays }) {
   return (
     <section className={styles.resultPage}>
       <div>
+        <p className={styles.date}>Date</p>
+        <p className={styles.name}>Name</p>
         {holidays.map((holiday) => (
           <div key={holiday.date}>
-            {holiday.date} - {holiday.name} - {holiday.localName}
+            <p className={styles.results}>
+              {holiday.date} {holiday.name}
+            </p>
           </div>
         ))}
       </div>

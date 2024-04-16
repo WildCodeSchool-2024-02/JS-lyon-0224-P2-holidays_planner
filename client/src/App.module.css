@@ -3,6 +3,11 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 
 :root {
@@ -16,21 +21,4 @@
   );
   --font-weight: 10;
   --margin-eachcontainer: 1rem;
-}
-
-.divApp {
-  font-family: var(--font-family);
-  background: var(--background-gradient);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.headerPart,
-.buttonPart,
-.resultPart,
-.footerPart {
-  margin: var(--margin-eachcontainer);
 }
