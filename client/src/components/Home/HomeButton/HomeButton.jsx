@@ -1,9 +1,15 @@
 // import styles from "./homebutton.module.css";
 
 function HomeButton() {
+  const [] 
+  const []
+  const []
+
   return (
     <div>
-      <p>button text test</p>
+      <button></button>
+      <button></button>
+      <button></button>
     </div>
   );
 }
