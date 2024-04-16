@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Button from "./components/Search/Button";
 import Result from "./components/Result/Result";
 import Footer from "./components/Footer/Footer";
+import Title from "./components/Title";
 
 function App() {
   const [data, setData] = useState([]);
@@ -28,6 +29,7 @@ function App() {
       <section className={styles.footerPart}>
         <Footer />
       </section>
+      <Title />
     </div>
   );
 }
