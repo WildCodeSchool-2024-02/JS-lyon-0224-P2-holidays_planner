@@ -1,7 +1,6 @@
 import { useState } from "react";
-import PropTypes from 'prop-types' ; 
+import PropTypes from "prop-types";
 import styles from "./button.module.css";
-
 
 // Props contient les propriétés passées par le parent (APP.jsx)
 function Button({ setCountryCode }) {
@@ -41,9 +40,7 @@ function Button({ setCountryCode }) {
 }
 
 Button.propTypes = {
-  setCountryCode:PropTypes.func.isRequired
-}
-
-
+  setCountryCode: PropTypes.func.isRequired,
+};
 
 export default Button;
