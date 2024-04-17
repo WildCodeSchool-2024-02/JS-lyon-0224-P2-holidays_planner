@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Paytone+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,8 @@
 }
 
 :root {
-  --font-family: "Josefin Sans", sans-serif;
+  --font-family-tilte: "Paytone One", sans-serif;
+  --font-family-text: : "Montserrat", sans-serif;
   --font-color: white;
   --background-gradient: linear-gradient(
     to bottom,
@@ -20,5 +23,4 @@
 .homePage {
   background: var(--background-gradient);
   color: var(--font-color);
-  font: var(--font-family);
 }

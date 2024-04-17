@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div>
       <p className={styles.footerText}>
-        <img src={travel} alt="Travel" />
+        <img src={travel} alt="Travel" className={styles.footerImage} />
         By Holidays Planner
       </p>
     </div>

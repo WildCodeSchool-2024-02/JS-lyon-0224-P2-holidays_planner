@@ -1,22 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --font-family: "Josefin Sans", sans-serif;
-  --font-color: white;
-  --background-gradient: linear-gradient(
-    to bottom,
-    #73bde6,
-    #8ed6d7,
-    #adeae434
-  );
-  --font-weight: 10;
-  --margin-eachcontainer: 1rem;
-}
-
 .divClass {
   background: var(--background-gradient);
   color: var(--font-color);

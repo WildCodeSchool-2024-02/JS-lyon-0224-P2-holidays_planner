@@ -7,11 +7,9 @@ import Footer from "../Common/Footer/Footer";
 
 function FilterCountry() {
   const [data, setData] = useState(["FR"]);
-  // Stocker le code du pays ISO (type FR) du pays
   const [countryCode, setCountryCode] = useState("");
 
   useEffect(() => {
-    // Récupération du code pays actuel
     fetch(`https://date.nager.at/api/v3/NextPublicHolidays/${countryCode}`)
       .then((res) => res.json())
       .then((json) => setData(json));
@@ -19,18 +17,10 @@ function FilterCountry() {
 
   return (
     <div className={styles.divApp}>
-      <section className={styles.headerPart}>
-        <Header />
-      </section>
-      <section className={styles.buttonPart}>
-        <Button setCountryCode={setCountryCode} />
-      </section>
-      <section className={styles.resultPart}>
-        <Result holidays={data} />
-      </section>
-      <section className={styles.footerPart}>
-        <Footer />
-      </section>
+      <Header />
+      <Button setCountryCode={setCountryCode} />
+      <Result holidays={data} />
+      <Footer />
     </div>
   );
 }

@@ -1,30 +1,23 @@
+import { Link } from "react-router-dom";
 import styles from "./header.module.css";
-import Logo from "../../../assets/images/logo_2.png";
+
+// import Logo from "../../../assets/images/logo_2.png";
 
 function Header() {
   return (
     <nav className={styles.navBar}>
-      <img src={Logo} alt="logo earth" className={styles.logoPlanet} />
       <ul className={styles.navBarLinks}>
-        <li className={styles.navBarItem}>
-          <a href="/" className={styles.navBarLink}>
-            Homepage
-          </a>
+        <li className={styles.navBarLink}>
+          <Link to="/">Home</Link>
         </li>
-        <li className={styles.navBarItem}>
-          <a href="/" className={styles.navBarLink}>
-            Filter country
-          </a>
+        <li className={styles.navBarLink}>
+          <Link to="/filtercountry">FilterCountry</Link>
         </li>
-        <li className={styles.navBarItem}>
-          <a href="/" className={styles.navBarLink}>
-            Filter period
-          </a>
+        <li className={styles.navBarLink}>
+          <Link to="/calendar">Calendar</Link>
         </li>
-        <li className={styles.navBarItem}>
-          <a href="/" className={styles.navBarLink}>
-            About us
-          </a>
+        <li className={styles.navBarLink}>
+          <Link to="/aboutus">AboutUs</Link>
         </li>
       </ul>
     </nav>

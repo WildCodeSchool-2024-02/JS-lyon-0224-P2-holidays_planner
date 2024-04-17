@@ -6,12 +6,15 @@ function Result({ holidays }) {
     <section className={styles.resultPage}>
       <div>
         <p className={styles.date}>Date</p>
-        <p className={styles.name}>Name</p>
         {holidays.map((holiday) => (
           <div key={holiday.date}>
-            <p className={styles.results}>
-              {holiday.date} {holiday.name}
-            </p>
+            <p className={styles.results}>{holiday.date}</p>
+          </div>
+        ))}
+        <p className={styles.name}>Name</p>
+        {holidays.map((holiday) => (
+          <div key={holiday.name}>
+            <p className={styles.results}>{holiday.name}</p>
           </div>
         ))}
       </div>
