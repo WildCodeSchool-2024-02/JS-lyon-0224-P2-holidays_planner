@@ -3,7 +3,7 @@ import travel from "../../../assets/images/travel.png";
 
 function Footer() {
   return (
-    <div>
+    <div className={styles.classDiv}>
       <p className={styles.footerText}>
         <img src={travel} alt="Travel" />
         By Holidays Planner

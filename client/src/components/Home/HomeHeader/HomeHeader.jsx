@@ -1,9 +1,14 @@
-import HolidaysPlannerLogo from "../../../assets/images/logo_3.png";
+import HolidaysPlannerLogo from "../../../assets/images/logo-lazy-day.svg";
+import styles from "./homeheader.module.css";
 
 function HomeHeader() {
   return (
-    <div>
-      <img src={HolidaysPlannerLogo} alt="HolidaysPlannerLogo" />
+    <div className={styles.divClass}>
+      <img
+        src={HolidaysPlannerLogo}
+        alt="HolidaysPlannerLogo"
+        className={styles.logo}
+      />
     </div>
   );
 }
