@@ -1,7 +1,8 @@
-
 function HeaderHomepage() {
   return (
- <div><p>Header</p></div>
+    <div>
+      <p>Header</p>
+    </div>
   );
 }
 
