@@ -1,15 +1,17 @@
 import styles from "./home.module.css";
 import HomeHeader from "./HomeHeader/HomeHeader";
+import Title from "./Homemain/Title";
 import HomeButton from "./HomeButton/HomeButton";
 import Footer from "../Common/Footer/Footer";
-import HomeTitle from "./Homemain/Title";
+import AboutUs from "./AboutUs/AboutUs";
 
 function Home() {
   return (
-    <div className={styles.homepageGlobal}>
+    <div className={styles.homePage}>
       <HomeHeader />
-      <HomeTitle />
+      <Title />
       <HomeButton />
+      <AboutUs />
       <Footer />
     </div>
   );
