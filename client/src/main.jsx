@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Home from "./components/Home/Home";
 import FilterCountry from "./components/FilterCountry/FilterCountry";
-import Calender from "./components/Calender/Calender";
+import Calendar from "./components/Calender/Calendar";
 import AboutUsMain from "./components/AboutUS/Main/AboutUsMain";
 
 const router = createBrowserRouter([
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
         element: <FilterCountry />,
       },
       {
-        path: "/calender",
-        element: <Calender />,
+        path: "/calendar",
+        element: <Calendar />,
       },
       {
         path: "/aboutus",
