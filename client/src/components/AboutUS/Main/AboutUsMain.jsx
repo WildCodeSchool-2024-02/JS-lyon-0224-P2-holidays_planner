@@ -1,10 +1,10 @@
-// import styles from "./src/AboutUs/AboutUsMain.module.css";
+import styles from "./aboutus.module.css";
 import Header from "../../Common/Navbar/Header";
 import Footer from "../../Common/Footer/Footer";
 
 function AboutUsMain() {
   return (
-    <div>
+    <div className={styles.divClass}>
       <Header />
       <p>AboutUsmain</p>
       <Footer />
