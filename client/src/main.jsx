@@ -5,7 +5,7 @@ import App from "./App";
 import Home from "./components/Home/Home";
 import FilterCountry from "./components/FilterCountry/FilterCountry";
 import Calender from "./components/Calender/Calender";
-import AboutUsMain from "./components/AboutUS/Main/AboutUsMain";
+import AboutUsMain from "./components/AboutUS/AboutUs";
 
 const router = createBrowserRouter([
   {
