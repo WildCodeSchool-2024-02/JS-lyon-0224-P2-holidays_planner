@@ -9,20 +9,26 @@
 }
 
 .title {
+<<<<<<< HEAD
   font-family: "PaytoneOne-Regular";
+=======
+  font-family: var(--font-family-tilte);
+>>>>>>> dev
   font-weight: 400;
   font-size: 45px;
   text-align: center;
 }
 
-.country {
+.inputCode {
+  font-family: var(--font-family-text);
   width: 70%;
   height: 6vh;
   font-family:"JosefinSans-Regular";
   font-size: 20px;
 }
 
-.search {
+.searchButton {
+  font-family: var(--font-family-tilte);
   width: 20%;
   height: 5vh;
   font-family:"JosefinSans-Regular";

@@ -1,11 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Paytone+One&display=swap");
+
 .link {
   text-decoration: none;
+<<<<<<< HEAD
   font-family:"JosefinSans-Regular";
   color: white;
+=======
+  color: black;
+>>>>>>> dev
 }
 
-.classDiv {
+.aboutUsHome {
   display: flex;
   justify-content: center;
   align-items: center;
+  font: var(--font-family-text);
+  margin-top: 8rem;
 }

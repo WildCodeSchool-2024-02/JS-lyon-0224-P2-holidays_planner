@@ -5,7 +5,7 @@ import App from "./App";
 import Home from "./components/Home/Home";
 import FilterCountry from "./components/FilterCountry/FilterCountry";
 import Calendar from "./components/Calender/Calendar";
-import AboutUsMain from "./components/AboutUS/Main/AboutUsMain";
+import AboutUs from "./components/AboutUS/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/aboutus",
-        element: <AboutUsMain />,
+        element: <AboutUs />,
       },
     ],
   },

@@ -1,31 +1,25 @@
-.firstDiv {
-  display: flex;
-  flex-direction: row-reverse;
-  position: relative;
-}
-
-.classBuble {
-  display: block;
-  position: absolute;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Paytone+One&display=swap");
 
 .divClass {
   position: relative;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
-  background-image: url(../../../assets/images/europeMap.png);
+  justify-content: center;
+  background-image: url(../../../assets/images/planet.png);
   background-size: cover;
   width: 100%;
   height: 450px;
   padding: 2rem;
+  margin-top: 3rem;
 }
 
 .title {
   position: relative;
+  font-family: var(--font-family--tilte);
+  color: black;
+  margin-left: 4rem;
 }
 
-.imageBuble {
-  height: 10rem;
-  position: relative;
+.h1 {
+  font: var(--font-family-tilte);
 }

@@ -3,7 +3,7 @@ import styles from "./aboutUs.module.css";
 
 function AboutUs() {
   return (
-    <div className={styles.classDiv}>
+    <div className={styles.aboutUsHome}>
       <Link className={styles.link} to="/aboutus">
         About us
       </Link>
