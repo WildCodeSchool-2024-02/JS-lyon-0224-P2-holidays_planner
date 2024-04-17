@@ -1,15 +1,25 @@
-import styles from "./aboutus.module.css";
-import Header from "../../Common/Navbar/Header";
-import Footer from "../../Common/Footer/Footer";
+import styles from "./aboutusmain.module.css";
+import Avatar from "../../../assets/images/avatar.png";
 
-function AboutUsMain() {
+function AboutUs() {
   return (
-    <div className={styles.divClass}>
-      <Header />
-      <p>AboutUsmain</p>
-      <Footer />
+    <div className={styles.aboutUs}>
+      <section className={styles.profileAdeline}>
+        <img alt="imageAdeline" src={Avatar} />
+        <p>lorem </p>
+      </section>
+
+      <section className={styles.profileBastien}>
+        <img alt="imageBastien " src={Avatar} />
+        <p>lorem</p>
+      </section>
+
+      <section className={styles.profileKana}>
+        <img alt="imageKana" src={Avatar} />
+        <p> lorem </p>
+      </section>
     </div>
   );
 }
 
-export default AboutUsMain;
+export default AboutUs;
