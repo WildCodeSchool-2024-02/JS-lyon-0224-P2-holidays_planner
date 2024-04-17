@@ -12,14 +12,14 @@ function Button({ setCountryCode }) {
         {}
         <input
           type="text"
-          className={styles.country}
+          className={styles.inputCode}
           minLength="2"
           value={currentSearch}
           onChange={(e) => setCurrentSearch(e.target.value)}
         />
         <button
           type="button"
-          className={styles.search}
+          className={styles.searchButton}
           onClick={(e) => {
             e.preventDefault();
             setCountryCode(currentSearch);

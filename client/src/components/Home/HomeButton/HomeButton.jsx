@@ -3,7 +3,7 @@ import styles from "./homebutton.module.css";
 
 function HomeButton() {
   return (
-    <div className={styles.classDiv}>
+    <div className={styles.homeButtons}>
       <Link to="/filtercountry">
         <button type="button" className={styles.button}>
           Filter Country

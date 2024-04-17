@@ -1,16 +1,8 @@
 .divApp {
-  font-family: var(--font-family);
   background: var(--background-gradient);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-}
-
-.headerPart,
-.buttonPart,
-.resultPart,
-.footerPart {
-  margin: var(--margin-eachcontainer);
 }
