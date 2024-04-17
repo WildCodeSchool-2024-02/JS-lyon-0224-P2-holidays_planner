@@ -8,8 +8,8 @@ import CalendarResult from "./CalendarResult/CalendarResult";
 function CalendarComponent() {
   const [date, setDate] = useState(new Date());
 
-  const onChange = (date) => {
-    setDate(date);
+  const onChange = (newDate) => {
+    setDate(newDate);
   };
   return (
     <div>
