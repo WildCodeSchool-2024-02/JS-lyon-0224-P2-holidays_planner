@@ -1,13 +1,7 @@
-.textResultPage {
-  text-align: center;
-  font-size: 1rem;
-}
-
 .resultPage {
   padding: 2vh 3vh 2vh 3vh;
-  width: 80vw;
-  height: 50vh;
   border-radius: 2vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,14 +9,31 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.resultPart {
+.date, .name {
+  font-family: "PaytoneOne-Regular";
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.resultDate {
+  padding-right: 30px;
+}
+
+.resultsDate, .resultsName {
+  font-family:"JosefinSans-Regular";
   font-size: 25px;
 }
 
 @media only screen and (max-width: 430px) {
-  .resultPart {
-    font-size: 18px;
-    width: 100%;
-    margin: auto;
+  .resultPage {
+    margin: 0;
+  }
+
+  .date, .name {
+    font-size:25px;
+  }
+
+  .resultsDate, .resultsName {
+    font-size: 20px;
   }
 }

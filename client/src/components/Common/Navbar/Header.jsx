@@ -1,5 +1,5 @@
 import styles from "./header.module.css";
-import Logo from "../../../assets/images/logo_2.png";
+import Logo from "../../../assets/images/logo-lazy-day.svg";
 
 function Header() {
   return (

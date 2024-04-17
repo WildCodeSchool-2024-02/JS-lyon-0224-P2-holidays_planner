@@ -1,8 +1,13 @@
-.commonDesign {
   @font-face {
     font-family: "PaytoneOne-Regular";
-    src: url(assets/Fonts/Paytone_One/PaytoneOne-Regular.ttf) format("truetype");
+    src: url('assets/Fonts/Paytone_One/PaytoneOne-Regular.ttf') format('truetype');
   }
+
+  @font-face {
+    font-family: "JosefinSans-Regular";
+    src: url('assets/Fonts/Josefin_Sans/static/JosefinSans-Regular.ttf') format('truetype');
+    }
+  
 
   * {
     margin: 0;
@@ -12,6 +17,7 @@
 
   :root {
     --font-family: "PaytoneOne-Regular";
+    --font-family-text:"JosefinSans-Regular", sans-serif;
     --font-color: white;
     --background-gradient: linear-gradient(
       to bottom,
@@ -22,4 +28,4 @@
     --font-weight: 10;
     --margin-eachcontainer: 1rem;
   }
-}
+

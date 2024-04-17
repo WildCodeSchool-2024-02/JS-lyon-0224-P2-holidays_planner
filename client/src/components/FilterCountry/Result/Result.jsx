@@ -4,14 +4,19 @@ import styles from "./result.module.css";
 function Result({ holidays }) {
   return (
     <section className={styles.resultPage}>
-      <div>
+      <div className={styles.resultDate}>
         <p className={styles.date}>Date</p>
-        <p className={styles.name}>Name</p>
         {holidays.map((holiday) => (
           <div key={holiday.date}>
-            <p className={styles.results}>
-              {holiday.date} {holiday.name}
-            </p>
+            <p className={styles.resultsDate}>{holiday.date}</p>
+          </div>
+        ))}
+        </div>
+        <div className={styles.resultName}>
+        <p className={styles.name}>Name</p>
+        {holidays.map((holiday) => (
+          <div key={holiday.name}>
+            <p className={styles.resultsName}>{holiday.name}</p>
           </div>
         ))}
       </div>

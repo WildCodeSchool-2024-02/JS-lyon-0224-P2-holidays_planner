@@ -1,4 +1,4 @@
-import HolidaysPlannerLogo from "../../../assets/images/logo_3.png";
+import HolidaysPlannerLogo from "../../../assets/images/logo-lazy-day.svg";
 
 function HomeHeader() {
   return (
