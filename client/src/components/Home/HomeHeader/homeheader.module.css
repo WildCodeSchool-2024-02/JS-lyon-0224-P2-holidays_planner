@@ -1,0 +1,8 @@
+.divClass {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  height: 8rem;
+}

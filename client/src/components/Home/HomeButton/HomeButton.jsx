@@ -1,17 +1,24 @@
 import { Link } from "react-router-dom";
 import styles from "./homebutton.module.css";
+import styles from "./homebutton.module.css";
 
 function HomeButton() {
   return (
     <div className={styles.homeButtons}>
       <Link to="/filtercountry">
-        <button type="button">Filter by Country</button>
+        <button type="button" className={styles.button}>
+          Filter Country
+        </button>
+      </Link>
+      <Link to="/calender">
+        <button type="button" className={styles.button}>
+          Filter Period
+        </button>
       </Link>
       <Link to="/calendar">
-        <button type="button">Filter by Date</button>
-      </Link>
-      <Link to="/aboutus">
-        <button type="button">AboutUs</button>
+        <button type="button" className={styles.button}>
+          Calendar
+        </button>
       </Link>
     </div>
   );

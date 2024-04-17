@@ -2,7 +2,7 @@
 
 .link {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .aboutUsHome {
@@ -10,4 +10,5 @@
   justify-content: center;
   align-items: center;
   font: var(--font-family-text);
+  margin-top: 8rem;
 }
