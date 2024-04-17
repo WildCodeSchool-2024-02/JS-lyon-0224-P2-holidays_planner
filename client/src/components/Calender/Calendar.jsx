@@ -4,7 +4,7 @@ import "react-calendar/dist/Calendar.css";
 import Header from "../Common/Navbar/Header";
 import Footer from "../Common/Footer/Footer";
 import CalendarResult from "./CalendarResult/CalendarResult";
-import styles from "./calender.module.css";
+import styles from "./Calendar.module.css";
 
 function CalendarComponent() {
   const [date, setDate] = useState(new Date());
