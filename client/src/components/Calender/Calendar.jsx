@@ -4,6 +4,7 @@ import "react-calendar/dist/Calendar.css";
 import Header from "../Common/Navbar/Header";
 import Footer from "../Common/Footer/Footer";
 import CalendarResult from "./CalendarResult/CalendarResult";
+import styles from "./Calendar.module.css";
 
 function CalendarComponent() {
   const [date, setDate] = useState(new Date());
@@ -12,7 +13,7 @@ function CalendarComponent() {
     setDate(newDate);
   };
   return (
-    <div>
+    <div className={styles.divClass}>
       <Header />
       <h2>Calendar</h2>
       <Calendar onChange={onChange} value={date} locale="en-UK" />
