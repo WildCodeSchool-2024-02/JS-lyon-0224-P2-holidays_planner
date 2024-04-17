@@ -1,54 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Luckiest+Guy&display=swap");
+.commonDesign {
+  @font-face {
+    font-family: "PaytoneOne-Regular";
+    src: url(assets/Fonts/Paytone_One/PaytoneOne-Regular.ttf) format("truetype");
+  }
 
-@font-face {
-  font-family: "PaytoneOne-Regular";
-  src: url(assets/Fonts/Paytone_One/PaytoneOne-Regular.ttf) format("truetype");
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --font-family: "Josefin Sans", sans-serif;
-  --font-color: white;
-  --background-gradient: linear-gradient(
-    to bottom,
-    #73bde6,
-    #8ed6d7,
-    #adeae434
-  );
-  --font-weight: 10;
-  --margin-eachcontainer: 1rem;
-}
-
-.divApp {
-  font-family: var(--font-family);
-  background: var(--background-gradient);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.resultPart {
-  font-size: 25px;
-}
-
-.headerPart,
-.buttonPart,
-.resultPart,
-.footerPart {
-  margin: var(--margin-eachcontainer);
-}
-
-@media only screen and (max-width: 430px) {
-  .resultPart {
-    font-size: 18px;
-    width: 100%;
-    margin: auto;
+  :root {
+    --font-family: "PaytoneOne-Regular";
+    --font-color: white;
+    --background-gradient: linear-gradient(
+      to bottom,
+      #73bde6,
+      #8ed6d7,
+      #adeae434
+    );
+    --font-weight: 10;
+    --margin-eachcontainer: 1rem;
   }
 }

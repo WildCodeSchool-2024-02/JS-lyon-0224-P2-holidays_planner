@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import Header from "./components/Common/Navbar/Header";
+import styles from "./App.module.css";
 
 function App() {
   const [page, setPage] = useState("home");
 
   return (
     <>
-      {/* <Header /> */}
-      <nav>
+      <nav className={styles.commonDesign}>
         <Link to="/">Home</Link>
         <Link to="/filtercountry">FilterCountry</Link>
         <Link to="/calender">Calender</Link>
