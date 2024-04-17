@@ -1,0 +1,19 @@
+.homepageGlobal {
+  @font-face {
+    font-family: "PaytoneOne-Regular";
+    src: url(assets/Fonts/Paytone_One/PaytoneOne-Regular.ttf) format("truetype");
+  }
+
+  :root {
+    --font-family: "PaytoneOne-Regular";
+    --font-color: white;
+    --background-gradient: linear-gradient(
+      to bottom,
+      #73bde6,
+      #8ed6d7,
+      #adeae434
+    );
+    --font-weight: 10;
+    --margin-eachcontainer: 1rem;
+  }
+}
