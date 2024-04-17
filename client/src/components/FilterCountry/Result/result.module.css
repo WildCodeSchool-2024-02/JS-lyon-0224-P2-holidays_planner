@@ -14,3 +14,15 @@
   background-color: #f5f5f5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+.resultPart {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 430px) {
+  .resultPart {
+    font-size: 18px;
+    width: 100%;
+    margin: auto;
+  }
+}
