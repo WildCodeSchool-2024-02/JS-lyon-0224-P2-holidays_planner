@@ -9,7 +9,7 @@ function HomeButton() {
           Filter Country
         </button>
       </Link>
-      <Link to="/calender">
+      <Link to="/calendar">
         <button type="button" className={styles.button}>
           Filter Period
         </button>
