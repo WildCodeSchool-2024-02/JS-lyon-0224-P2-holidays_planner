@@ -19,8 +19,3 @@
 .logo {
   width: 25rem;
 }
-
-@media only screen and (max-width: 430px) {
-  .homePage {
-  }
-}

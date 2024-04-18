@@ -29,6 +29,6 @@
   --margin-eachcontainer: 1rem;
 }
 
-/* body {
-  background: var(--background-gradient);
-} */
+.commonDesign {
+  display: none;
+}

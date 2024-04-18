@@ -5,7 +5,6 @@ function Title() {
   return (
     <div className={styles.divClass}>
       <h1 className={styles.title}>
-        {" "}
         <span className={styles.findYour}>Find your public</span>{" "}
         <span className={styles.holidays}> holidays </span>
       </h1>
