@@ -1,8 +1,5 @@
 import HolidaysPlannerLogo from "../../../assets/images/logo-lazy-day.svg";
-<<<<<<< HEAD
-=======
 import styles from "./homeheader.module.css";
->>>>>>> dev
 
 function HomeHeader() {
   return (

@@ -1,11 +1,5 @@
 import { Link } from "react-router-dom";
 import styles from "./header.module.css";
-<<<<<<< HEAD
-import Logo from "../../../assets/images/logo-lazy-day.svg";
-=======
-
-// import Logo from "../../../assets/images/logo_2.png";
->>>>>>> dev
 
 function Header() {
   return (

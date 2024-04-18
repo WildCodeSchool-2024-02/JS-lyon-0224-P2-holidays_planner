@@ -8,7 +8,6 @@ function Result({ holidays }) {
         <p className={styles.date}>Date</p>
         {holidays.map((holiday) => (
           <div key={holiday.date}>
-<<<<<<< HEAD
             <p className={styles.resultsDate}>{holiday.date}</p>
           </div>
         ))}
@@ -18,15 +17,6 @@ function Result({ holidays }) {
         {holidays.map((holiday) => (
           <div key={holiday.name}>
             <p className={styles.resultsName}>{holiday.name}</p>
-=======
-            <p className={styles.results}>{holiday.date}</p>
-          </div>
-        ))}
-        <p className={styles.name}>Name</p>
-        {holidays.map((holiday) => (
-          <div key={holiday.name}>
-            <p className={styles.results}>{holiday.name}</p>
->>>>>>> dev
           </div>
         ))}
       </div>

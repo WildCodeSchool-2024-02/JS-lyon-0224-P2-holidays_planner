@@ -9,11 +9,7 @@
 }
 
 .title {
-<<<<<<< HEAD
   font-family: "PaytoneOne-Regular";
-=======
-  font-family: var(--font-family-tilte);
->>>>>>> dev
   font-weight: 400;
   font-size: 45px;
   text-align: center;

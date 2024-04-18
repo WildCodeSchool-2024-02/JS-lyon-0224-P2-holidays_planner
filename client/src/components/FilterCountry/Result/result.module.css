@@ -8,7 +8,6 @@
   align-items: center;
   background-color: #f5f5f5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-<<<<<<< HEAD
 }
 
 .date, .name {
@@ -24,16 +23,12 @@
 .resultsDate, .resultsName {
   font-family:"JosefinSans-Regular";
   font-size: 25px;
-=======
-  font: var(--font-family-text);
->>>>>>> dev
 }
 
 @media only screen and (max-width: 430px) {
   .resultPage {
     margin: 0;
   }
-<<<<<<< HEAD
 
   .date, .name {
     font-size:25px;
@@ -43,15 +38,3 @@
     font-size: 20px;
   }
 }
-=======
-}
-
-.date,
-.name {
-  font-family: var(--font-family-tilte);
-}
-
-.results {
-  font-family: var(--font-family-text);
-}
->>>>>>> dev
