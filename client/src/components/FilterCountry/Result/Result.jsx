@@ -11,8 +11,8 @@ function Result({ holidays }) {
             <p className={styles.resultsDate}>{holiday.date}</p>
           </div>
         ))}
-        </div>
-        <div className={styles.resultName}>
+      </div>
+      <div className={styles.resultName}>
         <p className={styles.name}>Name</p>
         {holidays.map((holiday) => (
           <div key={holiday.name}>
