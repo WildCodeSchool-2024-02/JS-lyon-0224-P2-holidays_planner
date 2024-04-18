@@ -1,13 +1,9 @@
 import styles from "./footer.module.css";
-import travel from "../../../assets/images/travel.png";
 
 function Footer() {
   return (
     <div className={styles.classDiv}>
-      <p className={styles.footerText}>
-        <img src={travel} alt="Travel" className={styles.footerImage} />
-        By Holidays Planner
-      </p>
+      <p className={styles.footerText}>By Holidays Planner</p>
     </div>
   );
 }

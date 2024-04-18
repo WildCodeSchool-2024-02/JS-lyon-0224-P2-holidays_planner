@@ -10,9 +10,9 @@ function App() {
         <Link to="/calendar">Calendar</Link>
         <Link to="/aboutus">AboutUs</Link>
       </nav>
-      <main>
+      <body className={styles.body}>
         <Outlet />
-      </main>
+      </body>
     </>
   );
 }
