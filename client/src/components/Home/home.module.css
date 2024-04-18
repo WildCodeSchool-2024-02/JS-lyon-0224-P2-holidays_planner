@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Paytone+One&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 :root {
-  --font-family-tilte: "Paytone One", sans-serif;
+  --font-family--tilte: "Paytone One", sans-serif;
   --font-family-text: : "Montserrat", sans-serif;
   --font-color: white;
   --background-gradient: linear-gradient(
