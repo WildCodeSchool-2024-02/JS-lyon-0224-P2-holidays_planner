@@ -1,4 +1,4 @@
-.classDiv {
+.homeButtons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,6 +6,7 @@
 
 .button {
   background-color: transparent;
+  font-family: "JosefinSans-Regular";
   border-radius: 50%;
   border: 2px solid white;
   padding: 1rem;

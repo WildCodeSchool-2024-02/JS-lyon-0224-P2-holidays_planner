@@ -28,3 +28,7 @@
   --font-weight: 10;
   --margin-eachcontainer: 1rem;
 }
+
+/* body {
+  background: var(--background-gradient);
+} */
