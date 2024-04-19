@@ -1,3 +1,8 @@
-p {
-  color: blue;
+img {
+  size: 2vh;
+}
+
+.footerText {
+  font-size: 20px;
+  text-align: center;
 }
