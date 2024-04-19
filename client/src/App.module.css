@@ -1,3 +1,34 @@
-p {
-  color: blue;
+@font-face {
+  font-family: "PaytoneOne-Regular";
+  src: url("assets/Fonts/Paytone_One/PaytoneOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "JosefinSans-Regular";
+  src: url("assets/Fonts/Josefin_Sans/static/JosefinSans-Regular.ttf")
+    format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family-title: "PaytoneOne-Regular";
+  --font-family-text: "JosefinSans-Regular", sans-serif;
+  --background-gradient: linear-gradient(
+    to bottom,
+    #73bde6,
+    #8ed6d7,
+    #adeae434
+  );
+}
+
+body {
+  font-family: var(--font-family-title);
+  background: var(--background-gradient);
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
