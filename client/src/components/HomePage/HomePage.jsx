@@ -1,9 +1,10 @@
+import HomeBody from "./HomeBody";
+
 function HomePage() {
   return (
-    <>
-      <p>toto</p>
-      <p>tata</p>
-    </>
+    <div>
+      <HomeBody />
+    </div>
   );
 }
 

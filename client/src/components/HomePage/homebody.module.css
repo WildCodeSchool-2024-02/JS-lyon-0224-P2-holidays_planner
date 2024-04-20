@@ -1,3 +1,16 @@
-p {
-  color: blue;
+.divClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  height: 30rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
