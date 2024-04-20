@@ -1,3 +1,20 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.navBarLink {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.navBarLinks {
+  text-decoration: none;
+  list-style: none;
+}
+
 .logo {
-  height: 5rem;
+  height: 7rem;
 }
