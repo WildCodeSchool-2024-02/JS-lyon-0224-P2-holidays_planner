@@ -9,7 +9,7 @@ function App() {
       <Header />
       <body className={styles.globalCss}>
         <Outlet />
-      </body>{" "}
+      </body>
       <Footer />
     </>
   );
