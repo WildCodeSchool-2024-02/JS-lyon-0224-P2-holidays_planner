@@ -1,1 +1,5 @@
-<p>coucou</p>;
+function SearchCountry() {
+  return <></>;
+}
+
+export default SearchCountry;

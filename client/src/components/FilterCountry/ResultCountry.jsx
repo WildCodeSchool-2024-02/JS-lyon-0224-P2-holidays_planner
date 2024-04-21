@@ -1,1 +1,5 @@
-<p>coucou</p>;
+function ResearchCountry() {
+  return <></>;
+}
+
+export default ResearchCountry;
