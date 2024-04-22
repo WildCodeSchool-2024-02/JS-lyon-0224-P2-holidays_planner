@@ -26,9 +26,8 @@
   );
 }
 
-body {
+.main {
   font-family: var(--font-family-title);
   background: var(--background-gradient);
-  background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
 }
