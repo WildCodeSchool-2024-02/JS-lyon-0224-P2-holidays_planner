@@ -1,16 +1,18 @@
 import { Outlet } from "react-router-dom";
 import styles from "./App.module.css";
-// import Header from "./components/Common/Header/Header";
-// import Footer from "./components/Common/Footer/Footer";
+import Header from "./components/Common/Header/Header";
+import Footer from "./components/Common/Footer/Footer";
 
 function App() {
   return (
-    <body className={styles.globalCss}>
-      {/* <Header />
-        <Outlet />
-      <Footer /> */}
-    </body>
-  );
+    <div className={styles.main}>
+    <Header />
+    <div className={styles.globalCss}>
+      <Outlet />
+    </div>
+    <Footer />
+  </div>
+);
 }
 
 export default App;

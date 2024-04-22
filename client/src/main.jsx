@@ -2,11 +2,22 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
+import HomePage from "./components/HomePage/HomePage";
+import FilterCountry from "./components/FilterCountry/ResultCountry";
 
 const router = createBrowserRouter([
   {
     element: <App />,
-    children: [],
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/filtercountry",
+        element: <FilterCountry />,
+      }
+    ],
   },
 ]);
 
