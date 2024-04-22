@@ -5,14 +5,14 @@ import Footer from "./components/Common/Footer/Footer";
 
 function App() {
   return (
-    <>
-      <Header />
-      <body className={styles.globalCss}>
-        <Outlet />
-      </body>
-      <Footer />
-    </>
-  );
+    <div className={styles.main}>
+    <Header />
+    <div className={styles.globalCss}>
+      <Outlet />
+    </div>
+    <Footer />
+  </div>
+);
 }
 
 export default App;
