@@ -1,0 +1,19 @@
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUs > p {
+  font-family: var(--font-family-text);
+  text-align: center;
+  font-weight: 10px;
+}
+
+.aboutUs > img {
+  margin: 1rem;
+  width: 20%;
+}

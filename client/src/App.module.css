@@ -18,6 +18,7 @@
 :root {
   --font-family-title: "PaytoneOne-Regular";
   --font-family-text: "JosefinSans-Regular", sans-serif;
+  --font-color: black;
   --background-gradient: linear-gradient(
     to bottom,
     #73bde6,

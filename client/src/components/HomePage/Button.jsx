@@ -9,9 +9,9 @@ function Button() {
           Filter By Country
         </button>
       </Link>
-      <Link to="/filterperiod">
+      <Link to="/filtercoutryyear">
         <button type="button" className={styles.button}>
-          Filter By Period
+          Filter By Year and Country
         </button>
       </Link>
     </div>

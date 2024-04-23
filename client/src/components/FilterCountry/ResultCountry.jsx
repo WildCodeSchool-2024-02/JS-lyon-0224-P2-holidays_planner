@@ -3,7 +3,7 @@ import styles from "./resultcountry.module.css";
 
 function ResultCountry({ holidays }) {
   return (
-    <section className={styles.partResult}>
+    <section className={styles.resultPage}>
       <div className={styles.resultDate}>
         <p className={styles.date}>Date</p>
         {holidays.map((holiday, index) => (
