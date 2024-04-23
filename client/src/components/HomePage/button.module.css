@@ -6,7 +6,8 @@
 }
 
 .button {
-  background-color: transparent;
+  font-size: 1rem;
+  /* background-color: transparent; */
   font-family: "JosefinSans-Regular";
   border-radius: 50%;
   border: 2px solid white;
