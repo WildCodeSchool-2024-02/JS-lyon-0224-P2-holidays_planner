@@ -6,13 +6,13 @@ import Footer from "./components/Common/Footer/Footer";
 function App() {
   return (
     <div className={styles.main}>
-    <Header />
-    <div className={styles.globalCss}>
-      <Outlet />
+      <Header />
+      <div className={styles.globalCss}>
+        <Outlet />
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
-);
+  );
 }
 
 export default App;
