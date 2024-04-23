@@ -15,7 +15,11 @@ function Header() {
           </Link>
         </li>
         <li className={styles.navBarLink}>Filter country</li>
-        <li className={styles.navBarLink}>Calendar</li>
+        <li className={styles.navBarLink}>
+          <Link className={styles.navBarLink} to="/filtercountryyear">
+            Calendar
+          </Link>
+        </li>
         <li className={styles.navBarLink}>About us</li>
       </ul>
     </nav>
