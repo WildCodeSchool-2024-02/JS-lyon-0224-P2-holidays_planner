@@ -1,23 +1,27 @@
-import { useState, useEffect } from "react";
-import ResultCountry from "./ResultCountry";
+import {useState, useEffect} from 'react';
 import SearchCountry from "./SearchCountry";
+import ResultCountry from "./ResultCountry";
+
 
 function FilterCountry() {
-  const [data, setData] = useState(["FR"]);
+  const [data, setData] = useState([]);
   const [countryCode, setCountryCode] = useState("");
 
   useEffect(() => {
-    fetch(`https://date.nager.at/api/v3/NextPublicHolidays/${countryCode}`)
-      .then((res) => res.json())
-      .then((json) => setData(json));
+    if (countryCode) {
+      fetch(`https://date.nager.at/api/v3/NextPublicHolidays/${countryCode}`)
+        .then((res) => res.json())
+        .then((json) => setData(json));
+    }
   }, [countryCode]);
 
   return (
-    <>
-      <SearchCountry setCountryCode={setCountryCode} />
-      <ResultCountry holidays={data} />
-    </>
+    <div>
+        <SearchCountry setCountryCode={setCountryCode} />
+        <ResultCountry holidays={data} />
+    </div>
   );
 }
-
-export default FilterCountry;
+  
+  export default FilterCountry;
+  
