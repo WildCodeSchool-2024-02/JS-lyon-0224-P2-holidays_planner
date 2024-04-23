@@ -21,7 +21,7 @@ function SearchCountry({ setCountryCode }) {
           type="button"
           className={styles.search}
           onClick={(e) => {
-            e.preventDefault(); 
+            e.preventDefault();
             setCountryCode(currentSearch);
           }}
         >
@@ -35,6 +35,5 @@ function SearchCountry({ setCountryCode }) {
 SearchCountry.propTypes = {
   setCountryCode: PropTypes.func.isRequired,
 };
-
 
 export default SearchCountry;

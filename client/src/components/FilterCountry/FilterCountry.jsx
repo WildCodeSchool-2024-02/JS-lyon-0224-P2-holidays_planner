@@ -1,7 +1,6 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from "react";
 import SearchCountry from "./SearchCountry";
 import ResultCountry from "./ResultCountry";
-
 
 function FilterCountry() {
   const [data, setData] = useState([]);
@@ -17,11 +16,10 @@ function FilterCountry() {
 
   return (
     <div>
-        <SearchCountry setCountryCode={setCountryCode} />
-        <ResultCountry holidays={data} />
+      <SearchCountry setCountryCode={setCountryCode} />
+      <ResultCountry holidays={data} />
     </div>
   );
 }
-  
-  export default FilterCountry;
-  
+
+export default FilterCountry;
