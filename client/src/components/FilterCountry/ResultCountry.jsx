@@ -8,7 +8,10 @@ function ResultCountry({ holidays }) {
         {holidays.map((holiday, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <div key={holiday.date + index}>
-            <p className={styles.results}>{holiday.date}{holiday.name}</p>
+            <p className={styles.results}>
+              {holiday.date}
+              {holiday.name}
+            </p>
           </div>
         ))}
       </div>
