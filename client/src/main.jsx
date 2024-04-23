@@ -4,11 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import HomePage from "./components/HomePage/HomePage";
 import FilterCountry from "./components/FilterCountry/FilterCountry";
-<<<<<<< HEAD
 import FilterCountryYear from "./components/FilterCountrYear/FilterCountryYear";
-=======
 import AboutUs from "./components/AboutUs/AboutUs";
->>>>>>> test-restructuration
 
 const router = createBrowserRouter([
   {
@@ -22,17 +19,14 @@ const router = createBrowserRouter([
         path: "/filtercountry",
         element: <FilterCountry />,
       },
-<<<<<<< HEAD
       {
         path: "/filtercountryyear",
         element: <FilterCountryYear />,
       },
-=======
       {
         path: "/aboutus",
         element: <AboutUs />,
       },
->>>>>>> test-restructuration
     ],
   },
 ]);

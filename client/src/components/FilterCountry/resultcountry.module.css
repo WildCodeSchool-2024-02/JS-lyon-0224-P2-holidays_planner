@@ -11,7 +11,7 @@
 
 .date,
 .name {
-  font-family: "PaytoneOne-Regular";
+  font-family: var(--font-family-title);
   font-size: 30px;
   padding-bottom: 10px;
 }
@@ -22,7 +22,7 @@
 
 .resultsDate,
 .resultsName {
-  font-family: "JosefinSans-Regular";
+  font-family: var(--font-family-text);
   font-size: 25px;
 }
 
