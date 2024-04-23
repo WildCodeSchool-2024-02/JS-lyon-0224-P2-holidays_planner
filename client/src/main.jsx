@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import HomePage from "./components/HomePage/HomePage";
 import FilterCountry from "./components/FilterCountry/FilterCountry";
+// import Filterperiod from "";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
         path: "/filtercountry",
         element: <FilterCountry />,
       },
+      // {
+      //   path: "/filterperiod",
+      //   element: <Filterperiod />,
+      // },
     ],
   },
 ]);

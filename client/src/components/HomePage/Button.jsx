@@ -6,7 +6,12 @@ function Button() {
     <div className={styles.flexHomebuttons}>
       <Link to="/filtercountry">
         <button type="button" className={styles.button}>
-          Filter Country
+          Filter By Country
+        </button>
+      </Link>
+      <Link to="/filterperiod">
+        <button type="button" className={styles.button}>
+          Filter By Period
         </button>
       </Link>
     </div>
