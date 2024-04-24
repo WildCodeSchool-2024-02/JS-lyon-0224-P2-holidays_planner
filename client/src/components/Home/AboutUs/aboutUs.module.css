@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+  color: black;
+  font-family: "JosefinSans-Regular";
+}
+
+.aboutUsHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--font-family-text);
+  margin-top: 8rem;
+}
