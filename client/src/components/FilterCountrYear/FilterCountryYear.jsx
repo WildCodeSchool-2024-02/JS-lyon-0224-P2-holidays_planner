@@ -5,9 +5,9 @@ import SearchYear from "./SearchYear";
 import Resultyear from "./ResultYear";
 
 function FilterCountryYear() {
-  const [date, setDate] = useState(new Date());
+  const [dateCY, setDateCY] = useState(new Date());
   const onChange = (newDate) => {
-    setDate(newDate);
+    setDateCY(newDate);
   };
 
   const [dataYear, setDataYear] = useState([]);
@@ -27,9 +27,9 @@ function FilterCountryYear() {
       <SearchYear setYear={setYear} setCountryCodeYear={setCountryCodeYear} />
       <Calendar
         onChange={onChange}
-        value={date}
+        value={dateCY}
         locale="en-UK"
-        // eslint-disable-next-line no-shadow
+        
         tileContent={({ date, view }) => {
           const formattedDate = date.toISOString().split("T")[0];
           const holiday = dataYear.find(
