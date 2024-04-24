@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Calendar from "react-calendar";
+import styles from "./filtercountryyear.module.css"
 import "react-calendar/dist/Calendar.css";
 import SearchYear from "./SearchYear";
 import Resultyear from "./ResultYear";
@@ -23,7 +24,7 @@ function FilterCountryYear() {
   }, [year, countryCodeYear]);
 
   return (
-    <div>
+    <div className={styles.calendarYearPage}>
       <SearchYear setYear={setYear} setCountryCodeYear={setCountryCodeYear} />
       <Calendar
         onChange={onChange}
