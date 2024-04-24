@@ -9,7 +9,8 @@ function ResultCountry({ holidays }) {
         {holidays.map((holiday) => (
           <div key={holiday.date}>
             <p className={styles.results}>
-              {holiday.date}{holiday.name}
+              {holiday.date}
+              {holiday.name}
             </p>
           </div>
         ))}
