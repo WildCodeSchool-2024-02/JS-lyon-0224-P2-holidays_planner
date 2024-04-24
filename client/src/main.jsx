@@ -5,10 +5,7 @@ import App from "./App";
 import HomePage from "./components/HomePage/HomePage";
 import FilterCountry from "./components/FilterCountry/FilterCountry";
 import FilterCountryYear from "./components/FilterCountrYear/FilterCountryYear";
-<<<<<<< HEAD
-=======
 import AboutUs from "./components/AboutUs/AboutUs";
->>>>>>> test-restructuration
 
 const router = createBrowserRouter([
   {
@@ -26,13 +23,10 @@ const router = createBrowserRouter([
         path: "/filtercountryyear",
         element: <FilterCountryYear />,
       },
-<<<<<<< HEAD
-=======
       {
         path: "/aboutus",
         element: <AboutUs />,
       },
->>>>>>> test-restructuration
     ],
   },
 ]);
