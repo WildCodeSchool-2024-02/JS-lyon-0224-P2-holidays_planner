@@ -1,4 +1,3 @@
-import Avatar from "../../assets/images/avatar.png";
 import styles from "./profile.module.css";
 import Adeline from "../../assets/images/Adeline.jpg";
 import Bastien from "../../assets/images/Bastien.jpg";
