@@ -29,10 +29,11 @@ function FilterCountryYear() {
         onChange={onChange}
         value={date}
         locale="en-UK"
+        // eslint-disable-next-line no-shadow
         tileContent={({ date, view }) => {
           const formattedDate = date.toISOString().split("T")[0];
           const holiday = dataYear.find(
-            (holiday) => holiday.date === formattedDate
+            (lazyDay) => lazyDay.date === formattedDate
           ); 
 
           return view === "month" && holiday ? holiday.name : null; 
