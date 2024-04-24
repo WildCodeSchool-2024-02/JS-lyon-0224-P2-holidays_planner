@@ -9,7 +9,7 @@ function Button() {
           Filter By Country
         </button>
       </Link>
-      <Link to="/filtercoutryyear">
+      <Link to="/filtercountryyear">
         <button type="button" className={styles.button}>
           Filter By Year and Country
         </button>
