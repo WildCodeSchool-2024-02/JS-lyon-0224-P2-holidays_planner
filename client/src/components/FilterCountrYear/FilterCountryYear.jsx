@@ -39,7 +39,8 @@ function FilterCountryYear() {
           return view === "month" && holiday ? holiday.name : null;
         }}
       />
-      <Resultyear dataYear={dataYear} />
+
+      <Resultyear days={dataYear} />
     </div>
   );
 }
