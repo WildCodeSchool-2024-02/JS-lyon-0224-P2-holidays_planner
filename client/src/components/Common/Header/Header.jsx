@@ -5,9 +5,7 @@ import logo from "../../../assets/images/logo-lazy-day.png";
 function Header() {
   return (
     <nav className={styles.navBar}>
-      <div className={styles.divLogo}>
-        <img src={logo} alt="logo lazy day" className={styles.logo} />
-      </div>
+      <img src={logo} alt="logo lazy day" className={styles.logo} />
       <ul className={styles.navBarLinks}>
         <li>
           <Link className={styles.navBarLink} to="/">

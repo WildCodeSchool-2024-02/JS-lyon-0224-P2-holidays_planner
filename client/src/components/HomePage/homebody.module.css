@@ -9,8 +9,15 @@
   height: 30rem;
 }
 
-.title {
+h1 {
+  text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 45px;
+  }
 }
