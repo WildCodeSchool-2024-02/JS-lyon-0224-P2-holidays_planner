@@ -2,10 +2,10 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
-import Home from "./components/Home/Home";
+import HomePage from "./components/HomePage/HomePage";
 import FilterCountry from "./components/FilterCountry/FilterCountry";
-import Calendar from "./components/Calender/Calendar";
-import AboutUs from "./components/AboutUS/AboutUs";
+import FilterCountryYear from "./components/FilterCountrYear/FilterCountryYear";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -13,15 +13,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <HomePage />,
       },
       {
         path: "/filtercountry",
         element: <FilterCountry />,
       },
       {
-        path: "/calendar",
-        element: <Calendar />,
+        path: "/filtercountryyear",
+        element: <FilterCountryYear />,
       },
       {
         path: "/aboutus",

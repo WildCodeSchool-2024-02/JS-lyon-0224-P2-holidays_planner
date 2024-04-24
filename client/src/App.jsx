@@ -1,19 +1,17 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import styles from "./App.module.css";
+import Header from "./components/Common/Header/Header";
+import Footer from "./components/Common/Footer/Footer";
 
 function App() {
   return (
-    <>
-      <nav className={styles.commonDesign}>
-        <Link to="/">Home</Link>
-        <Link to="/filtercountry">FilterCountry</Link>
-        <Link to="/calendar">Calendar</Link>
-        <Link to="/aboutus">AboutUs</Link>
-      </nav>
-      <body className={styles.body}>
+    <div className={styles.main}>
+      <Header />
+      <div className={styles.globalCss}>
         <Outlet />
-      </body>
-    </>
+      </div>
+      <Footer />
+    </div>
   );
 }
 

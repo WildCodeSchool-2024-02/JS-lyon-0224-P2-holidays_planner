@@ -16,19 +16,20 @@
 }
 
 :root {
-  --font-family: "PaytoneOne-Regular";
+  --font-family-title: "PaytoneOne-Regular";
   --font-family-text: "JosefinSans-Regular", sans-serif;
-  --font-color: white;
+  --font-color: black;
   --background-gradient: linear-gradient(
     to bottom,
     #73bde6,
     #8ed6d7,
     #adeae434
   );
-  --font-weight: 10;
-  --margin-eachcontainer: 1rem;
 }
 
-.commonDesign {
-  display: none;
+body {
+  font-family: var(--font-family-title);
+  background: var(--background-gradient);
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
