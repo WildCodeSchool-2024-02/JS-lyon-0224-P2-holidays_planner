@@ -29,17 +29,17 @@ function FilterCountryYear() {
         onChange={onChange}
         value={dateCY}
         locale="en-UK"
-        
         tileContent={({ date, view }) => {
           const formattedDate = date.toISOString().split("T")[0];
           const holiday = dataYear.find(
             (lazyDay) => lazyDay.date === formattedDate
-          ); 
+          );
 
-          return view === "month" && holiday ? holiday.name : null; 
+          return view === "month" && holiday ? holiday.name : null;
         }}
       />
-      <Resultyear dataYear={dataYear} />
+
+      <Resultyear days={dataYear} />
     </div>
   );
 }
