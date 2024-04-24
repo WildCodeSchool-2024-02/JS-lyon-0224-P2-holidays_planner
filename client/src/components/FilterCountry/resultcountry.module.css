@@ -2,28 +2,27 @@
   padding: 2vh 3vh 2vh 3vh;
   border-radius: 2vh;
   height: 55vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #f5f5f5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.date,
-.name {
+.title {
   font-family: var(--font-family-title);
   font-size: 30px;
-  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 4vh;
 }
 
-.resultDate {
-  padding-right: 30px;
-}
 
-.resultsDate,
-.resultsName {
+.results {
   font-family: var(--font-family-text);
   font-size: 25px;
+  text-align: center;
+  /* border: solid;
+  border-radius: 2vh; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30vh);
+  grid-gap: 5vh;
 }
 
 @media only screen and (max-width: 430px) {
@@ -31,13 +30,11 @@
     margin: 0;
   }
 
-  .date,
-  .name {
-    font-size: 25px;
+  .title {
+    font-size: 22px;
   }
 
-  .resultsDate,
-  .resultsName {
-    font-size: 20px;
+  .result {
+    font-size: 18px;
   }
 }

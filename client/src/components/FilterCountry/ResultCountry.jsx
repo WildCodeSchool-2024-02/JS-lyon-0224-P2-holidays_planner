@@ -2,15 +2,17 @@ import PropTypes from "prop-types";
 import styles from "./resultcountry.module.css";
 
 function ResultCountry({ holidays }) {
+
+  console.log (holidays);
+
   return (
     <section className={styles.resultPage}>
-      <div className={styles.resultDate}>
-        {holidays.map((holiday, index) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <div key={holiday.date + index}>
+      <p className={styles.title}>Public holidays for the next 365 days</p>
+      <div className={styles.result}>
+        {holidays.map((holiday) => (
+          <div key={holiday.date}>
             <p className={styles.results}>
-              {holiday.date}
-              {holiday.name}
+              {holiday.date}{holiday.name}
             </p>
           </div>
         ))}
