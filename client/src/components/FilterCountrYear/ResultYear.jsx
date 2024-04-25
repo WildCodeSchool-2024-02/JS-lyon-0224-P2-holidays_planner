@@ -3,25 +3,28 @@ import styles from "./resultyear.module.css";
 
 function ResultYear({ days }) {
   return (
-    <section className={styles.resultPage}>
-      <div className={styles.resultDate}>
-        {days.map((day) => (
-          <div key={day.date}>
-            <p className={styles.results}>{day.date}</p>
+    <div>
+      {days.length > 0 && (
+        <section className={styles.resultPage}>
+          <div className={styles.resultDate}>
+            {days.map((day) => (
+              <div key={day.date}>
+                <p className={styles.results}>{day.date}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <div className={styles.resultDate}>
-        {days.map((day) => (
-          <div key={day.name}>
-            <p className={styles.results}>{day.name}</p>
+          <div className={styles.resultDate}>
+            {days.map((day) => (
+              <div key={day.name}>
+                <p className={styles.results}>{day.name}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </section>
+        </section>
+      )}
+    </div>
   );
 }
-
 ResultYear.propTypes = {
   days: Proptypes.arrayOf(
     Proptypes.shape({
@@ -30,5 +33,4 @@ ResultYear.propTypes = {
     })
   ).isRequired,
 };
-
 export default ResultYear;

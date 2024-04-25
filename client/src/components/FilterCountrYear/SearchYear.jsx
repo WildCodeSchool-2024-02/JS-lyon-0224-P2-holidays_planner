@@ -2,10 +2,9 @@ import { useState } from "react";
 import Proptypes from "prop-types";
 import styles from "./searchYear.module.css";
 
-function SearchYear({ setCountryCodeYear, setYear }) {
+function SearchYear({ setCountryCodeYear, setYear, searchWithYear }) {
   const [search, setSearch] = useState("");
   const [searchYear, setSearchYear] = useState("");
-
   return (
     <div className={styles.blocSearch}>
       <label className={styles.title}>
@@ -19,7 +18,6 @@ function SearchYear({ setCountryCodeYear, setYear }) {
           onChange={(e) => setSearch(e.target.value)}
         />
       </label>
-
       <label className={styles.title}>
         Choose your year
         <input
@@ -38,6 +36,7 @@ function SearchYear({ setCountryCodeYear, setYear }) {
           e.preventDefault();
           setCountryCodeYear(search);
           setYear(searchYear);
+          searchWithYear(searchYear);
         }}
       >
         Search
@@ -45,10 +44,8 @@ function SearchYear({ setCountryCodeYear, setYear }) {
     </div>
   );
 }
-
 SearchYear.propTypes = {
   setCountryCodeYear: Proptypes.func.isRequired,
   setYear: Proptypes.func.isRequired,
 };
-
 export default SearchYear;
