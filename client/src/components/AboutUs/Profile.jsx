@@ -10,26 +10,14 @@ function Profile() {
       <img alt="imageAdeline" src={Adeline} />
       <h2>Adeline</h2>
       <h4>Developer Web Junior</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
-        architecto!
-      </p>
 
       <img alt="imageBastien " src={Bastien} />
       <h2>Bastien</h2>
       <h4>Developer Web Junior</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-        iste.
-      </p>
 
       <img alt="imageKana" src={Kana} />
       <h2>Kana</h2>
       <h4>Developer Web Junior</h4>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-        dolorem.
-      </p>
     </div>
   );
 }
