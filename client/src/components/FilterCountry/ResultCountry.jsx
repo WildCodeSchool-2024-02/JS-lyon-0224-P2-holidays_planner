@@ -7,15 +7,23 @@ function ResultCountry({ holidays }) {
     <section className={styles.resultPage}>
       <p className={styles.title}>Public holidays for the next 365 days</p>
       <div className={styles.results}>
-        {holidays.map((holiday) => (
-          <div key={holiday.date} className={styles.holiday}>
-            <p className={styles.results}>
-              <span className={styles.date}>{holiday.date}</span>
-              <br />
-              <span className={styles.name}>{holiday.name}</span>
-            </p>
-          </div>
-        ))}
+        {holidays.map((holiday, index) => {
+          let holidayColor = styles.holiday1;
+          if (index % 3 === 0) {
+            holidayColor = styles.holiday2;
+          } else if (index % 3 === 2) {
+            holidayColor = styles.holiday3;
+          }
+          return (
+            <div key={holiday.date} className={(styles.holiday, holidayColor)}>
+              <p className={styles.results}>
+                <span className={styles.date}>{holiday.date}</span>
+                <br />
+                <span className={styles.name}>{holiday.name}</span>
+              </p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
