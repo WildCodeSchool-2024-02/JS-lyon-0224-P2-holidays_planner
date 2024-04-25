@@ -23,11 +23,30 @@
   align-items: center;
 }
 
-.holiday {
-  width: 30%;
+.holiday1 {
+  background-color: #f4b942;
+  width: 45%;
   padding: 3vh;
   margin: 1%;
-  border: solid;
+  border: solid #f4b942;
+  border-radius: 2vh;
+}
+
+.holiday2 {
+  background-color: #97d8c4;
+  width: 45%;
+  padding: 3vh;
+  margin: 1%;
+  border: solid #97d8c4;
+  border-radius: 2vh;
+}
+
+.holiday3 {
+  background-color: #6b9ac4;
+  width: 45%;
+  padding: 3vh;
+  margin: 1%;
+  border: solid #6b9ac4;
   border-radius: 2vh;
 }
 
