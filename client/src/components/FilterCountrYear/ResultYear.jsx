@@ -5,17 +5,15 @@ function ResultYear({ days }) {
   return (
     <section className={styles.resultPage}>
       <div className={styles.resultDate}>
-        {days.map((day, index) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <div key={day.date + index}>
+        {days.map((day) => (
+          <div key={day.date}>
             <p className={styles.results}>{day.date}</p>
           </div>
         ))}
       </div>
       <div className={styles.resultDate}>
-        {days.map((day, index) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <div key={day.name + index}>
+        {days.map((day) => (
+          <div key={day.name}>
             <p className={styles.results}>{day.name}</p>
           </div>
         ))}
