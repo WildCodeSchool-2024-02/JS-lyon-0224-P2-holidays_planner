@@ -47,5 +47,6 @@ function SearchYear({ setCountryCodeYear, setYear, searchWithYear }) {
 SearchYear.propTypes = {
   setCountryCodeYear: Proptypes.func.isRequired,
   setYear: Proptypes.func.isRequired,
+  searchWithYear: Proptypes.func.isRequired,
 };
 export default SearchYear;
