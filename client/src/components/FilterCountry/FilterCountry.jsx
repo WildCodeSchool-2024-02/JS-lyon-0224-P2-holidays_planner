@@ -4,7 +4,7 @@ import ResultCountry from "./ResultCountry";
 
 function FilterCountry() {
   const [data, setData] = useState([]);
-  const [countryCode, setCountryCode] = useState("FR");
+  const [countryCode, setCountryCode] = useState("");
 
   useEffect(() => {
     if (countryCode) {
