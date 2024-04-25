@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import styles from "./resultcountry.module.css";
 
 function ResultCountry({ holidays }) {
+
   return (
     <section className={styles.resultPage}>
       <p className={styles.title}>Public holidays for the next 365 days</p>
