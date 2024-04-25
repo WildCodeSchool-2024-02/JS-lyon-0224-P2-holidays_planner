@@ -14,21 +14,21 @@
 .title {
   font-family: var(--font-family-title);
   font-weight: 400;
-  font-size: 45px;
+  font-size: 30px;
   text-align: center;
 }
 
 .country {
   width: 70%;
-  height: 6vh;
+  height: 5vh;
   font-family: var(--font-family-text);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .search {
   width: 20%;
-  height: 5vh;
+  height: 4vh;
   font-family: var(--font-family-text);
-  font-size: 18px;
+  font-size: 17px;
   margin: 1vh;
 }
