@@ -3,15 +3,15 @@ import styles from "./button.module.css";
 
 function Button() {
   return (
-    <div className={styles.flexHomebuttons}>
+    <div className={styles.flexHomeButtons}>
       <Link to="/filtercountry">
         <button type="button" className={styles.button}>
-          Filter By Country
+          Filter by Country
         </button>
       </Link>
       <Link to="/filtercountryyear">
         <button type="button" className={styles.button}>
-          Filter By Year and Country
+          Filter by Country and Year
         </button>
       </Link>
     </div>

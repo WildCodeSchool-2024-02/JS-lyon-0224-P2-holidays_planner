@@ -1,19 +1,47 @@
+h1 {
+  text-align: center;
+}
+
 .aboutUs {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
   justify-content: center;
-  align-items: center;
-}
-
-.aboutUs > p {
-  font-family: var(--font-family-text);
   text-align: center;
-  font-weight: 10px;
 }
 
-.aboutUs > img {
-  margin: 1rem;
-  width: 20%;
+.photo {
+  width: 100%;
+  padding: 3vh;
+}
+
+
+h4 {
+  font-family: var(--font-family-text);
+}
+
+@media only screen and (min-width: 430px) {
+  .aboutUs {
+    display: flex;
+  }
+
+  .photo {
+    width: 80%;
+    padding: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Adeline, .Bastien, .Kana {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h3, h4 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
 }
