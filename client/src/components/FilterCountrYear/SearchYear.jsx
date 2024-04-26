@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Proptypes from "prop-types";
 import styles from "./searchYear.module.css";
+
 function SearchYear({ setCountryCodeYear, setYear, searchWithYear }) {
   const [search, setSearch] = useState("");
   const [searchYear, setSearchYear] = useState("");
@@ -46,5 +47,6 @@ function SearchYear({ setCountryCodeYear, setYear, searchWithYear }) {
 SearchYear.propTypes = {
   setCountryCodeYear: Proptypes.func.isRequired,
   setYear: Proptypes.func.isRequired,
+  searchWithYear: Proptypes.func.isRequired,
 };
 export default SearchYear;
