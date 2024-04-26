@@ -41,7 +41,9 @@ function FilterCountryYear() {
           const holiday = dataYear.find(
             (lazyDay) => lazyDay.date === formattedDate
           );
-          return view === "month" && holiday ? holiday.name : null;
+          return view === "month" && holiday === true
+            ? holiday.name === true
+            : null;
         }}
       />
       <Resultyear days={dataYear} />

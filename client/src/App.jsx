@@ -7,7 +7,7 @@ function App() {
   return (
     <div className={styles.main}>
       <Header />
-      <div className={styles.globalCss}>
+      <div className={styles.main}>
         <Outlet />
       </div>
       <Footer />
