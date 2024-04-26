@@ -15,24 +15,24 @@ function Header() {
       <ul className={styles.navBarLinks}>
         <li>
           <Link className={styles.navBarLink} to="/">
-            <img src={HomeLogo} alt="homelogo" /> Home
+            <img src={HomeLogo} alt="home logo" /> Home
           </Link>
         </li>
         <li>
           <Link className={styles.navBarLink} to="/filtercountry">
-            <img src={EarthLogo} alt="earthlogo" />
+            <img src={EarthLogo} alt="earth logo" />
             Filter By Country
           </Link>
         </li>
         <li>
           <Link className={styles.navBarLink} to="/filtercountryyear">
-            <img src={CalendarLogo} alt="calendarlogo" />
+            <img src={CalendarLogo} alt="calendar logo" />
             Filter By Year and Country
           </Link>
         </li>
         <li>
           <Link className={styles.navBarLink} to="/aboutus">
-            <img src={TeamLogo} alt="teamlogo" />
+            <img src={TeamLogo} alt="team logo" />
             About Us
           </Link>
         </li>
