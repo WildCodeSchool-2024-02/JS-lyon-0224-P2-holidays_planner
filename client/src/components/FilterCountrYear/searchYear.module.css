@@ -24,10 +24,11 @@
   }
 
   .title {
-    font-size: 22px;
+    font-size: 15px;
   }
 
-  .result {
-    font-size: 18px;
+  .search {
+    font-size: 15px;
+    height: 3vh;
   }
 }
