@@ -10,11 +10,14 @@ function FilterCountryYear() {
   const onChange = (newDate) => {
     setDateCY(newDate);
   };
-
   const [dataYear, setDataYear] = useState([]);
   const [year, setYear] = useState("");
   const [countryCodeYear, setCountryCodeYear] = useState("");
-
+  const searchWithYear = (askedYear) => {
+    const dateString = `01/01/${askedYear}`;
+    const dateObject = new Date(dateString);
+    setDateCY(dateObject);
+  };
   useEffect(() => {
     fetch(
       `https://date.nager.at/api/v3/PublicHolidays/${year}/${countryCodeYear}`
@@ -22,10 +25,13 @@ function FilterCountryYear() {
       .then((res) => res.json())
       .then((json) => setDataYear(json));
   }, [year, countryCodeYear]);
-
   return (
     <div className={styles.calendarYearPage}>
-      <SearchYear setYear={setYear} setCountryCodeYear={setCountryCodeYear} />
+      <SearchYear
+        setYear={setYear}
+        setCountryCodeYear={setCountryCodeYear}
+        searchWithYear={searchWithYear}
+      />
       <Calendar
         onChange={onChange}
         value={dateCY}
@@ -35,14 +41,13 @@ function FilterCountryYear() {
           const holiday = dataYear.find(
             (lazyDay) => lazyDay.date === formattedDate
           );
-
-          return view === "month" && holiday ? holiday.name : null;
+          return view === "month" && holiday === true
+            ? holiday.name === true
+            : null;
         }}
       />
-
       <Resultyear days={dataYear} />
     </div>
   );
 }
-
 export default FilterCountryYear;

@@ -7,7 +7,7 @@ function FilterCountry() {
   const [countryCode, setCountryCode] = useState("");
 
   useEffect(() => {
-    if (countryCode) {
+    if (countryCode !== null) {
       fetch(`https://date.nager.at/api/v3/NextPublicHolidays/${countryCode}`)
         .then((res) => res.json())
         .then((json) => setData(json));
