@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div>
       <p className={styles.footerText}>
-        <img src={travel} alt="Travel_logo_footer" />
+        <img src={travel} alt="Travel logo suit case footer" />
         By Holidays Planner
       </p>
       <Link to="/aboutus">
