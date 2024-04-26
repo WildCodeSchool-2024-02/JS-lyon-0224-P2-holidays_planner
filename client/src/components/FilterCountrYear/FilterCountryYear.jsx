@@ -4,7 +4,6 @@ import styles from "./filtercountryyear.module.css";
 import "react-calendar/dist/Calendar.css";
 import SearchYear from "./SearchYear";
 import Resultyear from "./ResultYear";
-
 function FilterCountryYear() {
   const [dateCY, setDateCY] = useState(new Date());
   const onChange = (newDate) => {
@@ -41,9 +40,7 @@ function FilterCountryYear() {
           const holiday = dataYear.find(
             (lazyDay) => lazyDay.date === formattedDate
           );
-          return view === "month" && holiday === true
-            ? holiday.name === true
-            : null;
+          return view === "month" && holiday ? holiday.name : null;
         }}
       />
       <Resultyear days={dataYear} />
