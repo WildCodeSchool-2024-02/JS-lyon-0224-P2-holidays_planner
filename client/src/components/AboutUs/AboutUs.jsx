@@ -5,19 +5,35 @@ import Kana from "../../assets/images/Kana.jpg";
 
 function AboutUs() {
   return (
-    <div className={styles.aboutUs}>
-      <h1>About team</h1>
-      <img alt="Portrait of Adeline" src={Adeline} />
-      <h2>Adeline</h2>
-      <h4>Developer Web Junior</h4>
+    <div>
+      <h1>About our team</h1>
+      <div className={styles.aboutUs}>
+        <span className={styles.Adeline}>
+          <img
+            alt="Portrait of Adeline"
+            src={Adeline}
+            className={styles.photo}
+          />
+          <h3>Adeline</h3>
+          <h4>Developer Web Junior</h4>
+        </span>
 
-      <img alt="Portrait of Bastien" src={Bastien} />
-      <h2>Bastien</h2>
-      <h4>Developer Web Junior</h4>
+        <span className={styles.Bastien}>
+          <img
+            alt="Portrait of Bastien"
+            src={Bastien}
+            className={styles.photo}
+          />
+          <h3>Bastien</h3>
+          <h4>Developer Web Junior</h4>
+        </span>
 
-      <img alt="Portrait of Kana" src={Kana} />
-      <h2>Kana</h2>
-      <h4>Developer Web Junior</h4>
+        <span className={styles.Kana}>
+          <img alt="Portrait of Kana" src={Kana} className={styles.photo} />
+          <h3>Kana</h3>
+          <h4>Developer Web Junior</h4>
+        </span>
+      </div>
     </div>
   );
 }
