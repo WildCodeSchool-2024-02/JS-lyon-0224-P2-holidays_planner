@@ -17,7 +17,6 @@
   cursor: pointer;
 }
 
-
 @media screen and (max-width: 430px) {
   .flexHomeButtons {
     display: flex;
@@ -26,9 +25,7 @@
     flex-direction: column;
   }
 
-  .button{
-    margin:2vh;
+  .button {
+    margin: 2vh;
   }
-
-
 }
