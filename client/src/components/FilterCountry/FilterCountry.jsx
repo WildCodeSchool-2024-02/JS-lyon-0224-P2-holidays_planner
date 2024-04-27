@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import SearchCountry from "./SearchCountry";
 import ResultCountry from "./ResultCountry";
+import styles from "./filtercountry.module.css";
 
 function FilterCountry() {
   const [data, setData] = useState([]);
@@ -15,7 +16,7 @@ function FilterCountry() {
   }, [countryCode]);
 
   return (
-    <div>
+    <div className={styles.filterCountry}>
       <SearchCountry setCountryCode={setCountryCode} />
       <ResultCountry holidays={data} />
     </div>

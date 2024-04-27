@@ -8,20 +8,19 @@ function SearchYear({ setCountryCodeYear, setYear, searchWithYear }) {
   return (
     <div className={styles.blocSearch}>
       <label className={styles.title}>
-        Choose your country
+        Choose your country & year
         <input
           type="text"
+          placeholder="Country Code"
           className={styles.country}
           minLength="2"
           maxLength="2"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-      </label>
-      <label className={styles.title}>
-        Choose your year
         <input
           type="text"
+          placeholder="Year"
           className={styles.country}
           minLength="4"
           maxLength="4"
