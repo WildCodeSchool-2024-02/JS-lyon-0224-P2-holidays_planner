@@ -34,6 +34,7 @@ function FilterCountryYear() {
       />
       <Calendar
         onChange={onChange}
+        className={styles.calendar}
         value={dateCY}
         locale="en-UK"
         tileContent={({ date, view }) => {
