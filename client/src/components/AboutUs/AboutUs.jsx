@@ -29,11 +29,7 @@ function AboutUs() {
         </span>
 
         <span className={styles.Kana}>
-          <img 
-            alt="Portrait of Kana" 
-            src={Kana} 
-            className={styles.photo} 
-          />
+          <img alt="Portrait of Kana" src={Kana} className={styles.photo} />
           <h3>Kana</h3>
           <h4>Developer Web Junior</h4>
         </span>
