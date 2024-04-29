@@ -1,0 +1,45 @@
+.blocSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vh;
+  background-color: #f5f5f5;
+  width: 90%;
+  margin-bottom: 5vh;
+  padding: 2vh 3vh 2vh 3vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+}
+
+.country {
+  width: 70%;
+  height: 5vh;
+  font-family: var(--font-family-text);
+  font-size: 18px;
+}
+
+.search {
+  width: 20%;
+  height: 3vh;
+  font-family: var(--font-family-text);
+  font-size: 17px;
+  margin: 1vh;
+}
+
+@media only screen and (max-width: 430px) {
+  .blocSearch {
+    margin: 0;
+    margin-bottom: 3vh;
+  }
+
+  .country {
+    height: 3vh;
+  }
+}
