@@ -1,24 +1,26 @@
 import { useState, useEffect } from "react";
-import SearchCountry from "./SearchCountry";
-import ResultCountry from "./ResultCountry";
-import styles from "./filtercountry.module.css";
+import styles from "./filtecountry.module.css";
+import Header from "../Common/Navbar/Header";
+import Result from "./Result/Result";
+import Button from "./Search/Button";
+import Footer from "../Common/Footer/Footer";
 
 function FilterCountry() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(["FR"]);
   const [countryCode, setCountryCode] = useState("");
 
   useEffect(() => {
-    if (countryCode !== null) {
-      fetch(`https://date.nager.at/api/v3/NextPublicHolidays/${countryCode}`)
-        .then((res) => res.json())
-        .then((json) => setData(json));
-    }
+    fetch(`https://date.nager.at/api/v3/NextPublicHolidays/${countryCode}`)
+      .then((res) => res.json())
+      .then((json) => setData(json));
   }, [countryCode]);
 
   return (
-    <div className={styles.filterCountry}>
-      <SearchCountry setCountryCode={setCountryCode} />
-      <ResultCountry holidays={data} />
+    <div className={styles.divApp}>
+      <Header />
+      <Button setCountryCode={setCountryCode} />
+      <Result holidays={data} />
+      <Footer />
     </div>
   );
 }
