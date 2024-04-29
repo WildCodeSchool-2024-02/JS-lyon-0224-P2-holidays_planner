@@ -38,14 +38,21 @@
   border: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 430px) {
   .navBar {
     position: absolute;
     right: 100;
     height: 50px;
     width: 420px;
     top: 0;
-    margin-top: 10px;
+  }
+
+  .navBarLinks li {
+    background: white;
+    width: 165px;
+    display: flex;
+    box-shadow: 10rem;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
   }
 
   .logo {
@@ -63,12 +70,17 @@
     color: black;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .navBarLink {
     width: 100%;
     text-align: center;
     margin-right: 0px;
     padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
   }
   .button {
     display: block;

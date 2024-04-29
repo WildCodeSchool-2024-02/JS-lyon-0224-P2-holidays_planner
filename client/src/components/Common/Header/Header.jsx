@@ -33,7 +33,7 @@ function Header() {
       <Link className={styles.navBarLink} to="/">
         <img src={logo} alt="logo lazy day" className={styles.logo} />
       </Link>
-      {(toggleMenu || screenWidth > 500) && (
+      {(toggleMenu || screenWidth > 430) && (
         <ul className={styles.navBarLinks}>
           <li>
             <Link className={styles.navBarLink} to="/">
@@ -49,7 +49,7 @@ function Header() {
           <li>
             <Link className={styles.navBarLink} to="/filtercountryyear">
               <img src={CalendarLogo} alt="calendar logo" />
-              Filter By Year and Country
+              Filter By Country and Year
             </Link>
           </li>
           <li>

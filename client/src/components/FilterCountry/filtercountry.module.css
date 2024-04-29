@@ -1,10 +1,10 @@
 .filterCountry {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 300px;
   margin-top: 150px;
 }
