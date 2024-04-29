@@ -33,7 +33,7 @@ function Header() {
       <Link className={styles.navBarLink} to="/">
         <img src={logo} alt="logo lazy day" className={styles.logo} />
       </Link>
-      {(toggleMenu || screenWidth > 430) && (
+      {(!!toggleMenu === true || !!screenWidth === true > 430) && (
         <ul className={styles.navBarLinks}>
           <li>
             <Link className={styles.navBarLink} to="/">
