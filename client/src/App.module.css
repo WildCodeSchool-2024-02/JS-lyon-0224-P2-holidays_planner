@@ -25,16 +25,16 @@
     #8ed6d7,
     #adeae434
   );
+  --background-gradient-false: linear-gradient(to bottom, #07399c, #111111);
 }
 
 body {
   font-family: var(--font-family-title);
-  background: var(--background-gradient);
-  background-repeat: no-repeat;
   min-height: 100vh;
 }
 
-.dark-theme {
-  background-color: #1f2a38;
-  color: #f1f1f1;
+.buttonDarkMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

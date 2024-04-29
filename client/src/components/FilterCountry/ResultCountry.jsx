@@ -17,7 +17,6 @@ function ResultCountry({ holidays }) {
             <div key={holiday.date} className={(styles.holiday, holidayColor)}>
               <p className={styles.results}>
                 <span className={styles.date}>{holiday.date}</span>
-                <br />
                 <span className={styles.name}>{holiday.name}</span>
               </p>
             </div>
@@ -31,6 +30,7 @@ function ResultCountry({ holidays }) {
 ResultCountry.propTypes = {
   holidays: PropTypes.arrayOf(
     PropTypes.shape({
+      countrycode: PropTypes.string.isRequired,
       date: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
     })

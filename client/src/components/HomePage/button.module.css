@@ -17,12 +17,28 @@
   cursor: pointer;
 }
 
+.buttonDakrmode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonDark {
+  font-weight: 600;
+  font-family: var(--font-family-text);
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1rem;
+  margin: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 430px) {
   .flexHomeButtons {
-    display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    margin: 2rem;
   }
 
   .button {
