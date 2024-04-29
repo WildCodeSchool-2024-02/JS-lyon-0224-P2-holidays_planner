@@ -3,7 +3,12 @@ import { useDarkBlue } from "../../context/DarkBlueContext";
 import styles from "./button.module.css";
 
 function Button() {
-  const { changeDarkBlue } = useDarkBlue();
+  const { darkblue, setDarkBlue} = useDarkBlue();
+  
+  function changeDarkBlue() {
+    setDarkBlue(!darkblue);
+  }
+
   return (
     <>
       <div className={styles.flexHomeButtons}>

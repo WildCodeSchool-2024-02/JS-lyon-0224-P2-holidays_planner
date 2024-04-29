@@ -1,19 +1,20 @@
 import PropTypes from "prop-types";
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useMemo } from "react";
 
 const DarkBlueContext = createContext();
 
 export function DarkBlueProvider({ children }) {
   const [darkblue, setDarkBlue] = useState(false);
 
-  function changeDarkBlue() {
-    setDarkBlue(!darkblue);
-  }
+
+  const memo = useMemo(() => (
+    {
+      darkblue, setDarkBlue
+    })
+  , [darkblue, setDarkBlue]);
 
   return (
-    <DarkBlueContext.Provider value={{ darkblue, changeDarkBlue }}>
-      {children}
-    </DarkBlueContext.Provider>
+    <DarkBlueContext.Provider value={memo}>{children}</DarkBlueContext.Provider>
   );
 }
 

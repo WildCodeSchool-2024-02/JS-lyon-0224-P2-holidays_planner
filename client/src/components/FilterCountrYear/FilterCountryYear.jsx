@@ -38,7 +38,6 @@ function FilterCountryYear() {
           value={dateCY}
           locale="en-UK"
           tileContent={({ date, view }) => {
-            const formattedDate = date.toISOString().split("T")[0];
             const holiday = dataYear.find((lazyDay) => {
               const holidayDate = new Date(lazyDay.date);
               return (
