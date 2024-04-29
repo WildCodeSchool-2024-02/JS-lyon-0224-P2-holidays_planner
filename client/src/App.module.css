@@ -31,10 +31,13 @@ body {
   font-family: var(--font-family-title);
   background: var(--background-gradient);
   background-repeat: no-repeat;
-  min-height: 100vh;
 }
 
 .dark-theme {
   background-color: #1f2a38;
   color: #f1f1f1;
+}
+
+.main {
+  min-height: 1020px;
 }
