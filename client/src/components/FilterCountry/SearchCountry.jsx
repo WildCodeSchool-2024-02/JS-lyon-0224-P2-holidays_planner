@@ -16,6 +16,7 @@ function SearchCountry({ setCountryCode }) {
           maxLength="2"
           value={currentSearch}
           onChange={(e) => setCurrentSearch(e.target.value)}
+          placeholder="CountryCode"
         />
         <button
           type="button"

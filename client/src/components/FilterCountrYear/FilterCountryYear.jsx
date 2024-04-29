@@ -32,22 +32,25 @@ function FilterCountryYear() {
         setCountryCodeYear={setCountryCodeYear}
         searchWithYear={searchWithYear}
       />
-      <Calendar
-        onChange={onChange}
-        className={styles.calendar}
-        value={dateCY}
-        locale="en-UK"
-        tileContent={({ date, view }) => {
-          const formattedDate = date.toISOString().split("T")[0];
-          const holiday = dataYear.find(
-            (lazyDay) => lazyDay.date === formattedDate
-          );
-          return view === "month" && holiday === true
-            ? holiday.name === true
-            : null;
-        }}
-      />
-      <Resultyear days={dataYear} />
+      <div className={styles.calendarBig}>
+        <Calendar
+          onChange={onChange}
+          value={dateCY}
+          locale="en-UK"
+          tileContent={({ date, view }) => {
+            const holiday = dataYear.find((lazyDay) => {
+              const holidayDate = new Date(lazyDay.date);
+              return (
+                holidayDate.getFullYear() === date.getFullYear() &&
+                holidayDate.getMonth() === date.getMonth() &&
+                holidayDate.getDate() === date.getDate()
+              );
+            });
+            return view === "month" && !!holiday === true ? holiday.name : null;
+          }}
+        />
+        <Resultyear days={dataYear} />
+      </div>
     </div>
   );
 }

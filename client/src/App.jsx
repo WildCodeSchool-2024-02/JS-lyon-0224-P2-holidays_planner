@@ -1,18 +1,35 @@
 import { Outlet } from "react-router-dom";
-import styles from "./App.module.css";
+import { useDarkBlue, DarkBlueProvider } from "./context/DarkBlueContext";
+import "./App.module.css";
 import Header from "./components/Common/Header/Header";
 import Footer from "./components/Common/Footer/Footer";
 
 function App() {
+  const { darkblue } = useDarkBlue();
+
+  // Define styles based on darkblue state
+  const appStyles = {
+    background: darkblue
+      ? "var( --background-gradient-false)"
+      : "var(--background-gradient)",
+    minHeight: "100vh",
+
+    fontFamily: darkblue ? "PaytoneOne-Regular" : "PaytoneOne-Regular",
+  };
+
   return (
-    <div className={styles.main}>
+    <div style={appStyles}>
       <Header />
-      <div className={styles.main}>
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default function AppWithProvider() {
+  return (
+    <DarkBlueProvider>
+      <App />
+    </DarkBlueProvider>
+  );
+}
