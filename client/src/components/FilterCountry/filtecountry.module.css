@@ -1,0 +1,9 @@
+.divApp {
+  background: var(--background-gradient);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+}

@@ -16,24 +16,19 @@
 }
 
 :root {
-  --font-family-title: "PaytoneOne-Regular";
+  --font-family: "PaytoneOne-Regular";
   --font-family-text: "JosefinSans-Regular", sans-serif;
-  --font-color: black;
+  --font-color: white;
   --background-gradient: linear-gradient(
     to bottom,
     #73bde6,
     #8ed6d7,
     #adeae434
   );
-  --background-gradient-false: linear-gradient(to bottom, #07399c, #95aadc);
+  --font-weight: 10;
+  --margin-eachcontainer: 1rem;
 }
 
-.buttonDarkMode {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  min-height: calc(100vh-117px);
+.commonDesign {
+  display: none;
 }

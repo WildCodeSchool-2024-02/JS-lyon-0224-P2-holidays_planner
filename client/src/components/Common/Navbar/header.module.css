@@ -1,0 +1,26 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  gap: 11rem;
+}
+
+.navBarLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.navBarLink {
+  font-family: var(--font-family-tilte);
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.logoPlanet {
+  width: 8rem;
+  margin: 0;
+}
