@@ -3,7 +3,6 @@ import Calendar from "react-calendar";
 import styles from "./filtercountryyear.module.css";
 import "react-calendar/dist/Calendar.css";
 import SearchYear from "./SearchYear";
-import Resultyear from "./ResultYear";
 
 function FilterCountryYear() {
   const [dateCY, setDateCY] = useState(new Date());
@@ -49,7 +48,6 @@ function FilterCountryYear() {
             return view === "month" && !!holiday === true ? holiday.name : null;
           }}
         />
-        <Resultyear days={dataYear} />
       </div>
     </div>
   );

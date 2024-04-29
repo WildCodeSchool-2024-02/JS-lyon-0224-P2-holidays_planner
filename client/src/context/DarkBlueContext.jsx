@@ -6,12 +6,13 @@ const DarkBlueContext = createContext();
 export function DarkBlueProvider({ children }) {
   const [darkblue, setDarkBlue] = useState(false);
 
-
-  const memo = useMemo(() => (
-    {
-      darkblue, setDarkBlue
-    })
-  , [darkblue, setDarkBlue]);
+  const memo = useMemo(
+    () => ({
+      darkblue,
+      setDarkBlue,
+    }),
+    [darkblue, setDarkBlue]
+  );
 
   return (
     <DarkBlueContext.Provider value={memo}>{children}</DarkBlueContext.Provider>

@@ -26,6 +26,7 @@
 .logo {
   height: 7rem;
 }
+
 .button {
   display: none;
   position: absolute;
@@ -50,6 +51,7 @@
   .navBarLinks li {
     background: white;
     width: 165px;
+    padding-right: 87px;
     display: flex;
     box-shadow: 10rem;
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
@@ -64,6 +66,7 @@
     flex-direction: column;
     height: auto;
   }
+
   .navBarLink:nth-child(1) {
     margin-top: 50px;
     text-decoration: none;
@@ -72,6 +75,7 @@
     align-items: center;
     justify-content: space-between;
   }
+
   .navBarLink {
     width: 100%;
     text-align: center;
