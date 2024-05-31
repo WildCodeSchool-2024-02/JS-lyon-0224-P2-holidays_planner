@@ -1,7 +1,25 @@
-# holidays_planner
-
+# À propos
 This project uses Harmonia. Harmonia is a framework meant to serve as a foundation for every project following the React-Express-MySQL stack, as learned in Wild Code School.
 It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying a pedagogical tool.
+
+**Technologies Used**
+Figma
+GitHub
+CSS
+JavaScript
+React
+
+# Holidays Planner - Holiday Search Application
+Development of a React application allowing users to search and obtain holiday results for 90 countries using the Nager.date API.
+
+**Filter by Country**
+On the "Filter by Country" page, users can check holidays by country code and display all holidays for the next 365 days.
+
+**Filter by Country and Year**
+On the "Filter by Country and Year" page, users can check holidays by country code and by year. The calendar will then display the month containing the holidays. For example, if you search with "FR" and "2025", the calendar will show the holidays for the current month in 2025.
+
+ **Light Mode / Dark Mode**
+The "Light Mode / Dark Mode" button allows users to change the site's background color.
 
 ## Setup & Use
 
